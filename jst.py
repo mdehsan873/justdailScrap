@@ -3,8 +3,7 @@ import urllib
 import csv
 
 
-def innerHTML(element):
-    return element.decode_contents(formatter="html")
+
 
 def get_name(body):
 	return body.find('span', {'class':'jcn'}).a.string
@@ -19,7 +18,7 @@ def get_phone_number(body):
 def get_address(body):
 	return body.find('span', {'class':'mrehover'}).text.strip()
 
-
+#page count for page
 page_number = 1
 service_count = 1
 
